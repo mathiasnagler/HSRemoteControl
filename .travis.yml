@@ -1,0 +1,3 @@
+language: objective-c
+xcode_scheme: HSRemoteControl
+xcode_project: HSRemoteControl.xcodeproj
