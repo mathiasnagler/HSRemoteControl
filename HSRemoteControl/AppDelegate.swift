@@ -43,9 +43,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     override func awakeFromNib() {
         // TODO: this should use 'NSVariableStatusItemLength' instead of -1, but currently this causes a linker error
         statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
-        statusItem.title = "HSBC"
-        // TODO: Set images for statusBarItem
-        // statusItem.image =
+        // statusItem.title = "HSBC"
+        statusItem.image = NSImage(named: "MenuIcon")
+        statusItem.image?.setTemplate(true)
         // statusItem.alternateImage =
         statusItem.highlightMode = true
         
