@@ -67,7 +67,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func exitApp() {
-        exit(0)
+        NSApplication.sharedApplication().terminate(self)
     }
 
 
