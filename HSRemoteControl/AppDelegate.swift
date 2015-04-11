@@ -28,10 +28,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.aboutWindow.orderOut(self)
         
         mikeyListener = MikeyListener()
+        
+        // Unload rcd
+        NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["unload","/System/Library/LaunchAgents/com.apple.rcd.plist"])
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+        // Load rcd again
+        NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["load", "/System/Library/LaunchAgents/com.apple.rcd.plist"])
     }
     
     // MARK: - Nib Handling
