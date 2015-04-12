@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5E7B131ADABBB400CD984C /* BluetoothListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E7B121ADABBB400CD984C /* BluetoothListener.swift */; };
+		4D5E7B161ADAC9C800CD984C /* MediaKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E7B151ADAC9C800CD984C /* MediaKey.m */; };
 		522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522001CE1AD53C8D0002F288 /* MikeyListener.swift */; };
 		522001D01AD53D270002F288 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; };
 		522001D11AD53D270002F288 /* DDHidLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,6 +44,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D5E7B121ADABBB400CD984C /* BluetoothListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothListener.swift; sourceTree = "<group>"; };
+		4D5E7B141ADAC9C800CD984C /* MediaKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaKey.h; sourceTree = "<group>"; };
+		4D5E7B151ADAC9C800CD984C /* MediaKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaKey.m; sourceTree = "<group>"; };
 		522001CC1AD53C530002F288 /* DDHidLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDHidLib.framework; sourceTree = "<group>"; };
 		522001CE1AD53C8D0002F288 /* MikeyListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MikeyListener.swift; sourceTree = "<group>"; };
 		522001D31AD53E120002F288 /* HSRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -106,8 +111,11 @@
 		52DC21771AD5330500C9CC5C /* HSRemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				4D5E7B141ADAC9C800CD984C /* MediaKey.h */,
+				4D5E7B151ADAC9C800CD984C /* MediaKey.m */,
 				52DC217A1AD5330600C9CC5C /* AppDelegate.swift */,
 				522001CE1AD53C8D0002F288 /* MikeyListener.swift */,
+				4D5E7B121ADABBB400CD984C /* BluetoothListener.swift */,
 				52DC217C1AD5330600C9CC5C /* Images.xcassets */,
 				52DC217E1AD5330600C9CC5C /* MainMenu.xib */,
 				52DC21781AD5330500C9CC5C /* Supporting Files */,
@@ -244,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5E7B161ADAC9C800CD984C /* MediaKey.m in Sources */,
 				522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */,
 				52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */,
+				4D5E7B131ADABBB400CD984C /* BluetoothListener.swift in Sources */,
 				52978CB81AD860020049B1E0 /* HIDAuxKeyPoster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

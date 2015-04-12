@@ -20,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusMenu: NSMenu!
     
     var mikeyListener: MikeyListener?
+    var bluetoothListener: BluetoothListener?
 
     // MARK: - Notifications
     
@@ -28,6 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.aboutWindow.orderOut(self)
         
         mikeyListener = MikeyListener()
+        bluetoothListener = BluetoothListener()
         
         // Unload rcd
         NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["unload","/System/Library/LaunchAgents/com.apple.rcd.plist"])
