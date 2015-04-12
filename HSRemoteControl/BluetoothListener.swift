@@ -49,24 +49,22 @@ class BluetoothListener {
     
     private func eventHandler(event: NSEvent?) {
         
-        if let
-            event = event,
-            keyType = BluetoothButton(rawValue: event.data2 & 0x0000FFFF)
-        {
-            
-            println("\(keyType.description()) event detected")
-            
-            switch keyType {
-            case .Play:
-                MediaKey.send(NX_KEYTYPE_PLAY)
-            case .Next:
-                MediaKey.send(NX_KEYTYPE_FAST)
-            case .Previous:
-                MediaKey.send(NX_KEYTYPE_REWIND)
+        if let event = event {
+            if let keyType = BluetoothButton(rawValue: event.data2 & 0x0000FFFF) {
+                
+                println("\(keyType.description()) event detected")
+                
+                switch keyType {
+                case .Play:
+                    MediaKey.send(NX_KEYTYPE_PLAY)
+                case .Next:
+                    MediaKey.send(NX_KEYTYPE_FAST)
+                case .Previous:
+                    MediaKey.send(NX_KEYTYPE_REWIND)
+                }
             }
         }
-
-
+    
     }
     
 }
