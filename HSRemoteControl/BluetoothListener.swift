@@ -9,42 +9,64 @@
 import Foundation
 import AppKit
 
-let BT_PLAY = 205
-let BT_NEXT = 181
-let BT_PREVIOUS = 182
+enum BluetoothButton: Int {
+    case Play       = 205
+    case Next       = 181
+    case Previous   = 182
+    
+    func description() -> String {
+        switch self {
+        case .Play:
+            return "Play"
+        case .Next:
+            return "Next"
+        case .Previous:
+            return "Previous"
+        }
+    }
+}
 
-class BluetoothListener : NSObject {
+class BluetoothListener {
     
-    var eventMonitor : AnyObject? = nil
+    // MARK: - Properties
     
-    override init() {
-        super.init()
-        
+    var eventMonitor: AnyObject?
+    
+    // MARK: - Initialization
+    
+    init() {
         startListening()
     }
     
+    // MARK: - Public
+    
     func startListening() {
         // TODO: Find reason for occasional delay
-        eventMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.KeyDownMask | NSEventMask.SystemDefinedMask, handler: self.eventHandler)!
+        eventMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.KeyDownMask | NSEventMask.SystemDefinedMask, handler: self.eventHandler)
     }
     
-    func eventHandler (event: (NSEvent!)) -> Void {
+    // MARK: - Private
+    
+    private func eventHandler(event: NSEvent?) {
         
-        let keyType = event.data2 & 0x0000FFFF
-
-        switch keyType {
-        case BT_PLAY:
-            println("\"play\" event detected")
-            MediaKey.send(NX_KEYTYPE_PLAY)
-        case BT_NEXT:
-            println("\"next\" event detected")
-            MediaKey.send(NX_KEYTYPE_FAST)
-        case BT_PREVIOUS:
-            println("\"previous\" event detected")
-            MediaKey.send(NX_KEYTYPE_REWIND)
-        default:
-            break
+        if let
+            event = event,
+            keyType = BluetoothButton(rawValue: event.data2 & 0x0000FFFF)
+        {
+            
+            println("\(keyType.description()) event detected")
+            
+            switch keyType {
+            case .Play:
+                MediaKey.send(NX_KEYTYPE_PLAY)
+            case .Next:
+                MediaKey.send(NX_KEYTYPE_FAST)
+            case .Previous:
+                MediaKey.send(NX_KEYTYPE_REWIND)
+            }
         }
+
+
     }
     
 }
