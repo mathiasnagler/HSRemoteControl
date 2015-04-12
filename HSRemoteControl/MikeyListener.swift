@@ -9,7 +9,7 @@
 import Cocoa
 import IOKit
 
-enum MikeyButton: UInt32 {
+enum Mikey: UInt32 {
     case PlayPause  = 137
     case Next       = 138
     case Prev       = 139
@@ -37,7 +37,7 @@ class MikeyListener: NSObject {
     // MARK: - Properties
     
     var miKeys: Array<DDHidAppleMikey> = Array<DDHidAppleMikey>()
-    
+
     // MARK: - Initialization
     
     override init() {
@@ -50,7 +50,7 @@ class MikeyListener: NSObject {
             }
         }
         miKeys.map { $0.setDelegate(self) }
-        
+
         startListening()
     }
     
@@ -67,7 +67,7 @@ class MikeyListener: NSObject {
     // MARK: - DDHidAppleMikeyDelegate
     
     override func ddhidAppleMikey(mikey: DDHidAppleMikey!, press usageId: UInt32, upOrDown: Bool) {
-        if let mikeyButton = MikeyButton(rawValue: usageId) {
+        if let mikeyButton = Mikey(rawValue: usageId) {
             
             if !upOrDown {
                 return
