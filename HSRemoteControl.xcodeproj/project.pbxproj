@@ -16,6 +16,8 @@
 		52DC217D1AD5330600C9CC5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC217C1AD5330600C9CC5C /* Images.xcassets */; };
 		52DC21801AD5330600C9CC5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DC217E1AD5330600C9CC5C /* MainMenu.xib */; };
 		52DC218C1AD5330600C9CC5C /* HSRemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC218B1AD5330600C9CC5C /* HSRemoteControlTests.swift */; };
+		52EB5F561ADB060700586928 /* About.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 52EB5F551ADB060700586928 /* About.rtfd */; };
+		52EB5F591ADB064900586928 /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB5F581ADB064900586928 /* AboutWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		52DC21851AD5330600C9CC5C /* HSRemoteControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSRemoteControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC218A1AD5330600C9CC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC218B1AD5330600C9CC5C /* HSRemoteControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSRemoteControlTests.swift; sourceTree = "<group>"; };
+		52EB5F551ADB060700586928 /* About.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = About.rtfd; sourceTree = "<group>"; };
+		52EB5F581ADB064900586928 /* AboutWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,10 @@
 				52DC217A1AD5330600C9CC5C /* AppDelegate.swift */,
 				522001CE1AD53C8D0002F288 /* MikeyListener.swift */,
 				4D5E7B121ADABBB400CD984C /* BluetoothListener.swift */,
-				52DC217C1AD5330600C9CC5C /* Images.xcassets */,
+				52EB5F571ADB062500586928 /* Windows */,
 				52DC217E1AD5330600C9CC5C /* MainMenu.xib */,
+				52DC217C1AD5330600C9CC5C /* Images.xcassets */,
+				52EB5F541ADB05EE00586928 /* Resources */,
 				52DC21781AD5330500C9CC5C /* Supporting Files */,
 			);
 			path = HSRemoteControl;
@@ -145,6 +151,22 @@
 				52DC218A1AD5330600C9CC5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52EB5F541ADB05EE00586928 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52EB5F551ADB060700586928 /* About.rtfd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52EB5F571ADB062500586928 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				52EB5F581ADB064900586928 /* AboutWindow.swift */,
+			);
+			path = Windows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +253,7 @@
 			files = (
 				52DC217D1AD5330600C9CC5C /* Images.xcassets in Resources */,
 				52DC21801AD5330600C9CC5C /* MainMenu.xib in Resources */,
+				52EB5F561ADB060700586928 /* About.rtfd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +292,7 @@
 				522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */,
 				52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */,
 				4D5E7B131ADABBB400CD984C /* BluetoothListener.swift in Sources */,
+				52EB5F591ADB064900586928 /* AboutWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
