@@ -35,18 +35,12 @@ class BluetoothListener : NSObject {
         switch keyType {
         case BT_PLAY:
             println("\"play\" event detected")
-            // TODO: Why doesn't HIDAuxKeyPoster work here??
-            // HIDAuxKeyPoster.HIDPostAuxKey(UInt8(NX_KEYTYPE_PLAY));
             MediaKey.send(NX_KEYTYPE_PLAY)
         case BT_NEXT:
             println("\"next\" event detected")
-            // TODO: Why doesn't HIDAuxKeyPoster work here??
-            // HIDAuxKeyPoster.HIDPostAuxKey(UInt8(NX_KEYTYPE_FAST));
             MediaKey.send(NX_KEYTYPE_FAST)
         case BT_PREVIOUS:
             println("\"previous\" event detected")
-            // TODO: Why doesn't HIDAuxKeyPoster work here??
-            // HIDAuxKeyPoster.HIDPostAuxKey(UInt8(NX_KEYTYPE_REWIND));
             MediaKey.send(NX_KEYTYPE_REWIND)
         default:
             break

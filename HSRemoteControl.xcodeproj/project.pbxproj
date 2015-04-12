@@ -12,7 +12,6 @@
 		522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522001CE1AD53C8D0002F288 /* MikeyListener.swift */; };
 		522001D01AD53D270002F288 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; };
 		522001D11AD53D270002F288 /* DDHidLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		52978CB81AD860020049B1E0 /* HIDAuxKeyPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 52978CB71AD860020049B1E0 /* HIDAuxKeyPoster.m */; };
 		52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC217A1AD5330600C9CC5C /* AppDelegate.swift */; };
 		52DC217D1AD5330600C9CC5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC217C1AD5330600C9CC5C /* Images.xcassets */; };
 		52DC21801AD5330600C9CC5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DC217E1AD5330600C9CC5C /* MainMenu.xib */; };
@@ -50,8 +49,6 @@
 		522001CC1AD53C530002F288 /* DDHidLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDHidLib.framework; sourceTree = "<group>"; };
 		522001CE1AD53C8D0002F288 /* MikeyListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MikeyListener.swift; sourceTree = "<group>"; };
 		522001D31AD53E120002F288 /* HSRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
-		52978CB71AD860020049B1E0 /* HIDAuxKeyPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIDAuxKeyPoster.m; sourceTree = "<group>"; };
-		52978CB91AD863310049B1E0 /* HIDAuxKeyPoster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIDAuxKeyPoster.h; sourceTree = "<group>"; };
 		52DC21751AD5330500C9CC5C /* HSRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC21791AD5330600C9CC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC217A1AD5330600C9CC5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,8 +116,6 @@
 				52DC217C1AD5330600C9CC5C /* Images.xcassets */,
 				52DC217E1AD5330600C9CC5C /* MainMenu.xib */,
 				52DC21781AD5330500C9CC5C /* Supporting Files */,
-				52978CB91AD863310049B1E0 /* HIDAuxKeyPoster.h */,
-				52978CB71AD860020049B1E0 /* HIDAuxKeyPoster.m */,
 			);
 			path = HSRemoteControl;
 			sourceTree = "<group>";
@@ -274,7 +269,6 @@
 				522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */,
 				52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */,
 				4D5E7B131ADABBB400CD984C /* BluetoothListener.swift in Sources */,
-				52978CB81AD860020049B1E0 /* HIDAuxKeyPoster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

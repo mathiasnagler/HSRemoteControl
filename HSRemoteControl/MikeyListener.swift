@@ -75,11 +75,11 @@ class MikeyListener: NSObject {
             
             switch mikeyButton {
             case .PlayPause:
-                HIDAuxKeyPoster.HIDPostAuxKey(UInt8(NX_KEYTYPE_PLAY));
+                MediaKey.send(NX_KEYTYPE_PLAY)
             case .Next:
-                HIDAuxKeyPoster.HIDPostAuxKey(UInt8(NX_KEYTYPE_FAST));
+                MediaKey.send(NX_KEYTYPE_FAST)
             case .Prev:
-                HIDAuxKeyPoster.HIDPostAuxKey(UInt8(NX_KEYTYPE_REWIND));
+                MediaKey.send(NX_KEYTYPE_REWIND)
             default:
                 break
             }
