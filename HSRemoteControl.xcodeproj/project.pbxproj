@@ -163,6 +163,7 @@
 				52DC21721AD5330500C9CC5C /* Frameworks */,
 				52DC21731AD5330500C9CC5C /* Resources */,
 				522001D21AD53D270002F288 /* Embed Frameworks */,
+				52B57E3A1ADAEF8D0045B07C /* Generate warnings from TODO and FIXME */,
 			);
 			buildRules = (
 			);
@@ -246,6 +247,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52B57E3A1ADAEF8D0045B07C /* Generate warnings from TODO and FIXME */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate warnings from TODO and FIXME";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52DC21711AD5330500C9CC5C /* Sources */ = {
