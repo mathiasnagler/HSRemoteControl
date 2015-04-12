@@ -3,6 +3,4 @@
 //
 
 #import <DDHidLib/DDHidLib.h>
-
-#import "HIDAuxKeyPoster.h"
 #import "MediaKey.h"
