@@ -672,7 +672,7 @@
         <window title="HSRemoteControl" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="335" y="390" width="304" height="177"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="304" height="177"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -681,16 +681,14 @@
         </window>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="14X-Hj-msF" customClass="AboutWindow" customModule="HSRemoteControl" customModuleProvider="target">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <rect key="contentRect" x="196" y="240" width="300" height="296"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-            <value key="minSize" type="size" width="303" height="300"/>
-            <value key="maxSize" type="size" width="300" height="300"/>
+            <rect key="contentRect" x="196" y="240" width="300" height="300"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="Y6O-8v-fVk">
-                <rect key="frame" x="0.0" y="5" width="300" height="296"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="njX-eH-wp1">
-                        <rect key="frame" x="77" y="193" width="147" height="19"/>
+                        <rect key="frame" x="77" y="197" width="147" height="19"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="HSRemoteControl" id="cGp-08-pHu">
                             <font key="font" metaFont="systemBold" size="16"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -698,14 +696,14 @@
                         </textFieldCell>
                     </textField>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XZV-wv-bqh">
-                        <rect key="frame" x="124" y="228" width="52" height="52"/>
+                        <rect key="frame" x="124" y="232" width="52" height="52"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="XZV-wv-bqh" secondAttribute="height" multiplier="1:1" id="vbO-8x-Tk6"/>
                         </constraints>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AboutIcon" id="9KM-V3-9OW"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cQe-Lj-AzR">
-                        <rect key="frame" x="119" y="171" width="63" height="14"/>
+                        <rect key="frame" x="119" y="175" width="63" height="14"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.0" id="V2b-MR-NQx">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -713,7 +711,7 @@
                         </textFieldCell>
                     </textField>
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-RQ-BXv">
-                        <rect key="frame" x="0.0" y="44" width="300" height="119"/>
+                        <rect key="frame" x="0.0" y="44" width="300" height="123"/>
                         <clipView key="contentView" id="10r-3F-Y16">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,10 +720,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="298" height="117"/>
+                                    <size key="minSize" width="298" height="121"/>
                                     <size key="maxSize" width="463" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="298" height="117"/>
+                                    <size key="minSize" width="298" height="121"/>
                                     <size key="maxSize" width="463" height="10000000"/>
                                 </textView>
                             </subviews>
