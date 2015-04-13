@@ -80,7 +80,12 @@ class MikeyListener: NSObject {
                 MediaKey.send(NX_KEYTYPE_FAST)
             case .Prev:
                 MediaKey.send(NX_KEYTYPE_REWIND)
+            case .Up:
+                MediaKey.send(NX_KEYTYPE_SOUND_UP)
+            case .Down:
+                MediaKey.send(NX_KEYTYPE_SOUND_DOWN)
             default:
+                println("unknown event detected \n\t-> usageId: %i", usageId)
                 break
             }
 
