@@ -12,6 +12,10 @@
 		522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522001CE1AD53C8D0002F288 /* MikeyListener.swift */; };
 		522001D01AD53D270002F288 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; };
 		522001D11AD53D270002F288 /* DDHidLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52D2C87E1ADD0D0400B94968 /* HSRemoteControlLaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52D2C87B1ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52D2C8801ADD0D3000B94968 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D2C87F1ADD0D3000B94968 /* ServiceManagement.framework */; };
+		52D2C8821ADD18CF00B94968 /* BooleanExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C8811ADD18CF00B94968 /* BooleanExtensions.swift */; };
+		52D2C8841ADD1A7500B94968 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C8831ADD1A7500B94968 /* SettingsWindow.swift */; };
 		52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC217A1AD5330600C9CC5C /* AppDelegate.swift */; };
 		52DC217D1AD5330600C9CC5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC217C1AD5330600C9CC5C /* Images.xcassets */; };
 		52DC21801AD5330600C9CC5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DC217E1AD5330600C9CC5C /* MainMenu.xib */; };
@@ -21,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		52D2C87A1ADD0CFA00B94968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D2C8751ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D2C8551ADD0CED00B94968;
+			remoteInfo = HSRemoteControlLaunchHelper;
+		};
+		52D2C87C1ADD0CFA00B94968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D2C8751ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D2C8651ADD0CED00B94968;
+			remoteInfo = HSRemoteControlLaunchHelperTests;
+		};
 		52DC21861AD5330600C9CC5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52DC216D1AD5330500C9CC5C /* Project object */;
@@ -42,6 +60,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52D2C84B1ADD0C9500B94968 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				52D2C87E1ADD0D0400B94968 /* HSRemoteControlLaunchHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +79,10 @@
 		522001CC1AD53C530002F288 /* DDHidLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDHidLib.framework; sourceTree = "<group>"; };
 		522001CE1AD53C8D0002F288 /* MikeyListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MikeyListener.swift; sourceTree = "<group>"; };
 		522001D31AD53E120002F288 /* HSRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
+		52D2C8751ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HSRemoteControlLaunchHelper.xcodeproj; path = HSRemoteControlLaunchHelper/HSRemoteControlLaunchHelper.xcodeproj; sourceTree = "<group>"; };
+		52D2C87F1ADD0D3000B94968 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		52D2C8811ADD18CF00B94968 /* BooleanExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooleanExtensions.swift; sourceTree = "<group>"; };
+		52D2C8831ADD1A7500B94968 /* SettingsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindow.swift; sourceTree = "<group>"; };
 		52DC21751AD5330500C9CC5C /* HSRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC21791AD5330600C9CC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC217A1AD5330600C9CC5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D2C8801ADD0D3000B94968 /* ServiceManagement.framework in Frameworks */,
 				522001D01AD53D270002F288 /* DDHidLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,9 +118,19 @@
 		522001CB1AD53C310002F288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52D2C87F1ADD0D3000B94968 /* ServiceManagement.framework */,
 				522001CC1AD53C530002F288 /* DDHidLib.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		52D2C8761ADD0CFA00B94968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52D2C87B1ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.app */,
+				52D2C87D1ADD0CFA00B94968 /* HSRemoteControlLaunchHelperTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		52DC216C1AD5330500C9CC5C = {
@@ -97,6 +140,7 @@
 				52DC21881AD5330600C9CC5C /* HSRemoteControlTests */,
 				522001CB1AD53C310002F288 /* Frameworks */,
 				52DC21761AD5330500C9CC5C /* Products */,
+				52D2C8751ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +161,7 @@
 				52DC217A1AD5330600C9CC5C /* AppDelegate.swift */,
 				522001CE1AD53C8D0002F288 /* MikeyListener.swift */,
 				4D5E7B121ADABBB400CD984C /* BluetoothListener.swift */,
+				52D2C8811ADD18CF00B94968 /* BooleanExtensions.swift */,
 				52EB5F571ADB062500586928 /* Windows */,
 				52DC217E1AD5330600C9CC5C /* MainMenu.xib */,
 				52DC217C1AD5330600C9CC5C /* Images.xcassets */,
@@ -164,6 +209,7 @@
 		52EB5F571ADB062500586928 /* Windows */ = {
 			isa = PBXGroup;
 			children = (
+				52D2C8831ADD1A7500B94968 /* SettingsWindow.swift */,
 				52EB5F581ADB064900586928 /* AboutWindow.swift */,
 			);
 			path = Windows;
@@ -180,6 +226,7 @@
 				52DC21721AD5330500C9CC5C /* Frameworks */,
 				52DC21731AD5330500C9CC5C /* Resources */,
 				522001D21AD53D270002F288 /* Embed Frameworks */,
+				52D2C84B1ADD0C9500B94968 /* CopyFiles */,
 				52B57E3A1ADAEF8D0045B07C /* Generate warnings from TODO and FIXME */,
 			);
 			buildRules = (
@@ -220,6 +267,11 @@
 				TargetAttributes = {
 					52DC21741AD5330500C9CC5C = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					52DC21841AD5330600C9CC5C = {
 						CreatedOnToolsVersion = 6.2;
@@ -238,6 +290,12 @@
 			mainGroup = 52DC216C1AD5330500C9CC5C;
 			productRefGroup = 52DC21761AD5330500C9CC5C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52D2C8761ADD0CFA00B94968 /* Products */;
+					ProjectRef = 52D2C8751ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				52DC21741AD5330500C9CC5C /* HSRemoteControl */,
@@ -245,6 +303,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52D2C87B1ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HSRemoteControlLaunchHelper.app;
+			remoteRef = 52D2C87A1ADD0CFA00B94968 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52D2C87D1ADD0CFA00B94968 /* HSRemoteControlLaunchHelperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HSRemoteControlLaunchHelperTests.xctest;
+			remoteRef = 52D2C87C1ADD0CFA00B94968 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52DC21731AD5330500C9CC5C /* Resources */ = {
@@ -288,11 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D2C8821ADD18CF00B94968 /* BooleanExtensions.swift in Sources */,
 				4D5E7B161ADAC9C800CD984C /* MediaKey.m in Sources */,
 				522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */,
 				52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */,
 				4D5E7B131ADABBB400CD984C /* BluetoothListener.swift in Sources */,
 				52EB5F591ADB064900586928 /* AboutWindow.swift in Sources */,
+				52D2C8841ADD1A7500B94968 /* SettingsWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

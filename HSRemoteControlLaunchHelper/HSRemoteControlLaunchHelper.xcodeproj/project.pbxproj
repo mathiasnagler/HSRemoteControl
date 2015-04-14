@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52228EBC1ADD441800BE2279 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52228EBB1ADD441800BE2279 /* main.swift */; };
+		52D2C86C1ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C86B1ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52D2C8661ADD0CED00B94968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D2C84D1ADD0CEC00B94968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D2C8541ADD0CED00B94968;
+			remoteInfo = HSRemoteControlLaunchHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52228EBB1ADD441800BE2279 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		524DCBF41ADD584900254C13 /* HSRemoteControlLaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HSRemoteControlLaunchHelper.entitlements; sourceTree = "<group>"; };
+		52D2C8551ADD0CED00B94968 /* HSRemoteControlLaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSRemoteControlLaunchHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D2C8591ADD0CED00B94968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D2C8651ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSRemoteControlLaunchHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D2C86A1ADD0CED00B94968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D2C86B1ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSRemoteControlLaunchHelperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52D2C8521ADD0CED00B94968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D2C8621ADD0CED00B94968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52D2C84C1ADD0CEC00B94968 = {
+			isa = PBXGroup;
+			children = (
+				52D2C8571ADD0CED00B94968 /* HSRemoteControlLaunchHelper */,
+				52D2C8681ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests */,
+				52D2C8561ADD0CED00B94968 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52D2C8561ADD0CED00B94968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52D2C8551ADD0CED00B94968 /* HSRemoteControlLaunchHelper.app */,
+				52D2C8651ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52D2C8571ADD0CED00B94968 /* HSRemoteControlLaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				524DCBF41ADD584900254C13 /* HSRemoteControlLaunchHelper.entitlements */,
+				52228EBB1ADD441800BE2279 /* main.swift */,
+				52D2C8581ADD0CED00B94968 /* Supporting Files */,
+			);
+			path = HSRemoteControlLaunchHelper;
+			sourceTree = "<group>";
+		};
+		52D2C8581ADD0CED00B94968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52D2C8591ADD0CED00B94968 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52D2C8681ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				52D2C86B1ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.swift */,
+				52D2C8691ADD0CED00B94968 /* Supporting Files */,
+			);
+			path = HSRemoteControlLaunchHelperTests;
+			sourceTree = "<group>";
+		};
+		52D2C8691ADD0CED00B94968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52D2C86A1ADD0CED00B94968 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52D2C8541ADD0CED00B94968 /* HSRemoteControlLaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D2C86F1ADD0CED00B94968 /* Build configuration list for PBXNativeTarget "HSRemoteControlLaunchHelper" */;
+			buildPhases = (
+				52D2C8511ADD0CED00B94968 /* Sources */,
+				52D2C8521ADD0CED00B94968 /* Frameworks */,
+				52D2C8531ADD0CED00B94968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSRemoteControlLaunchHelper;
+			productName = HSRemoteControlLaunchHelper;
+			productReference = 52D2C8551ADD0CED00B94968 /* HSRemoteControlLaunchHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52D2C8641ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D2C8721ADD0CED00B94968 /* Build configuration list for PBXNativeTarget "HSRemoteControlLaunchHelperTests" */;
+			buildPhases = (
+				52D2C8611ADD0CED00B94968 /* Sources */,
+				52D2C8621ADD0CED00B94968 /* Frameworks */,
+				52D2C8631ADD0CED00B94968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52D2C8671ADD0CED00B94968 /* PBXTargetDependency */,
+			);
+			name = HSRemoteControlLaunchHelperTests;
+			productName = HSRemoteControlLaunchHelperTests;
+			productReference = 52D2C8651ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52D2C84D1ADD0CEC00B94968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Mathias Nagler";
+				TargetAttributes = {
+					52D2C8541ADD0CED00B94968 = {
+						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					52D2C8641ADD0CED00B94968 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 52D2C8541ADD0CED00B94968;
+					};
+				};
+			};
+			buildConfigurationList = 52D2C8501ADD0CEC00B94968 /* Build configuration list for PBXProject "HSRemoteControlLaunchHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52D2C84C1ADD0CEC00B94968;
+			productRefGroup = 52D2C8561ADD0CED00B94968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52D2C8541ADD0CED00B94968 /* HSRemoteControlLaunchHelper */,
+				52D2C8641ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52D2C8531ADD0CED00B94968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D2C8631ADD0CED00B94968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52D2C8511ADD0CED00B94968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52228EBC1ADD441800BE2279 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D2C8611ADD0CED00B94968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D2C86C1ADD0CED00B94968 /* HSRemoteControlLaunchHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52D2C8671ADD0CED00B94968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D2C8541ADD0CED00B94968 /* HSRemoteControlLaunchHelper */;
+			targetProxy = 52D2C8661ADD0CED00B94968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52D2C86D1ADD0CED00B94968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52D2C86E1ADD0CED00B94968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52D2C8701ADD0CED00B94968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HSRemoteControlLaunchHelper/HSRemoteControlLaunchHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HSRemoteControlLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		52D2C8711ADD0CED00B94968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HSRemoteControlLaunchHelper/HSRemoteControlLaunchHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HSRemoteControlLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		52D2C8731ADD0CED00B94968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HSRemoteControlLaunchHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSRemoteControlLaunchHelper.app/Contents/MacOS/HSRemoteControlLaunchHelper";
+			};
+			name = Debug;
+		};
+		52D2C8741ADD0CED00B94968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HSRemoteControlLaunchHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSRemoteControlLaunchHelper.app/Contents/MacOS/HSRemoteControlLaunchHelper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52D2C8501ADD0CEC00B94968 /* Build configuration list for PBXProject "HSRemoteControlLaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D2C86D1ADD0CED00B94968 /* Debug */,
+				52D2C86E1ADD0CED00B94968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D2C86F1ADD0CED00B94968 /* Build configuration list for PBXNativeTarget "HSRemoteControlLaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D2C8701ADD0CED00B94968 /* Debug */,
+				52D2C8711ADD0CED00B94968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D2C8721ADD0CED00B94968 /* Build configuration list for PBXNativeTarget "HSRemoteControlLaunchHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D2C8731ADD0CED00B94968 /* Debug */,
+				52D2C8741ADD0CED00B94968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52D2C84D1ADD0CEC00B94968 /* Project object */;
+}
