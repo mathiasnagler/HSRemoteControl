@@ -671,13 +671,28 @@
         </menu>
         <window title="HSRemoteControl" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="335" y="390" width="304" height="177"/>
+            <rect key="contentRect" x="335" y="390" width="304" height="54"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="304" height="177"/>
+                <rect key="frame" x="0.0" y="5" width="304" height="54"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="ib9-0y-NzA">
+                        <rect key="frame" x="18" y="18" width="206" height="18"/>
+                        <buttonCell key="cell" type="check" title="Launch automatically on login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="PIg-2y-WbO">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ib9-0y-NzA" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="7QS-Is-AlU"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ib9-0y-NzA" secondAttribute="trailing" constant="20" id="HcM-GM-Qgh"/>
+                    <constraint firstItem="ib9-0y-NzA" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="Twn-Wh-1Bd"/>
+                    <constraint firstAttribute="bottom" secondItem="ib9-0y-NzA" secondAttribute="bottom" constant="20" id="n5q-hu-NYW"/>
+                </constraints>
             </view>
-            <point key="canvasLocation" x="216" y="234.5"/>
+            <point key="canvasLocation" x="216" y="173"/>
         </window>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="14X-Hj-msF" customClass="AboutWindow" customModule="HSRemoteControl" customModuleProvider="target">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
