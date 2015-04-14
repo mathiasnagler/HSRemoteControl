@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -669,20 +669,41 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="HSRemoteControl" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="HSRemoteControl" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="SettingsWindow" customModule="HSRemoteControl" customModuleProvider="target">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="335" y="390" width="304" height="177"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="contentRect" x="335" y="390" width="304" height="54"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="304" height="177"/>
+                <rect key="frame" x="0.0" y="5" width="304" height="54"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="ib9-0y-NzA">
+                        <rect key="frame" x="18" y="18" width="206" height="18"/>
+                        <buttonCell key="cell" type="check" title="Launch automatically on login" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="PIg-2y-WbO">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="launchAtLoginButtonToggled:" target="QvC-M9-y7g" id="Lhk-vV-avP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ib9-0y-NzA" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="7QS-Is-AlU"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ib9-0y-NzA" secondAttribute="trailing" constant="20" id="HcM-GM-Qgh"/>
+                    <constraint firstItem="ib9-0y-NzA" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="Twn-Wh-1Bd"/>
+                    <constraint firstAttribute="bottom" secondItem="ib9-0y-NzA" secondAttribute="bottom" constant="20" id="n5q-hu-NYW"/>
+                </constraints>
             </view>
-            <point key="canvasLocation" x="216" y="234.5"/>
+            <connections>
+                <outlet property="launchAtLoginButton" destination="ib9-0y-NzA" id="QN6-7Q-AP2"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="173"/>
         </window>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="14X-Hj-msF" customClass="AboutWindow" customModule="HSRemoteControl" customModuleProvider="target">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <rect key="contentRect" x="196" y="240" width="300" height="300"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" id="Y6O-8v-fVk">
                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -769,6 +790,7 @@
             </connections>
             <point key="canvasLocation" x="214" y="672"/>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="EfT-Gd-Wnf"/>
     </objects>
     <resources>
         <image name="AboutIcon" width="34" height="52"/>

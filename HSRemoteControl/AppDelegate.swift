@@ -74,6 +74,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApplication.sharedApplication().terminate(self)
     }
 
-
 }
 
