@@ -50,8 +50,6 @@ class MikeyListener: NSObject {
             }
         }
         miKeys.map { $0.setDelegate(self) }
-
-        startListening()
     }
     
     // MARK: - Public
