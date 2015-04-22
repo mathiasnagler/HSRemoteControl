@@ -21,6 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var mikeyListener: MikeyListener?
     var bluetoothListener: BluetoothListener?
+    
+    var customEventhandlingEnabled: Bool = false
 
     // MARK: - Notifications
     
@@ -28,16 +30,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.settingsWindow.orderOut(self)
         self.aboutWindow.orderOut(self)
         
+        // Initializes Key Listeners
         mikeyListener = MikeyListener()
         bluetoothListener = BluetoothListener()
         
-        // Unload rcd
-        NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["unload","/System/Library/LaunchAgents/com.apple.rcd.plist"])
+        // Register for notification to track active app
+        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: "workspaceDidActivateApplication:", name: NSWorkspaceDidActivateApplicationNotification, object: nil)
+        
+        // TODO: Do not enable if any apple media app is running
+        enableCustomEventHandling(true)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Load rcd again
         NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["load", "/System/Library/LaunchAgents/com.apple.rcd.plist"])
+        
+        // Remove self from notificationcenter
+        NSWorkspace.sharedWorkspace().notificationCenter.removeObserver(self)
     }
     
     // MARK: - Nib Handling
@@ -72,6 +81,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func exitApp() {
         NSApplication.sharedApplication().terminate(self)
+    }
+    
+    // MARK: - Notifications
+    
+    func workspaceDidActivateApplication(notification: NSNotification) {
+        if let
+            userInfo = notification.userInfo,
+            application = userInfo[NSWorkspaceApplicationKey] as? NSRunningApplication,
+            bundleIdentifier = application.bundleIdentifier,
+            mediaApplication = MediaApplication(rawValue: bundleIdentifier)
+        {
+            enableCustomEventHandling(!mediaApplication.isAppleApp())
+        }
+        
+    }
+    
+    // MARK: - Private
+    
+    private func enableCustomEventHandling(enabled: Bool) {
+        if enabled && !customEventhandlingEnabled{
+            // Enable KeyListeners
+            mikeyListener?.startListening()
+            bluetoothListener?.startListening()
+            
+            // Unload rcd
+            NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["unload","/System/Library/LaunchAgents/com.apple.rcd.plist"])
+            
+            println("Enabled custom event handling")
+        }
+        else if !enabled && customEventhandlingEnabled {
+            // Disable KeyListeners
+            mikeyListener?.stopListening()
+            bluetoothListener?.stopListening()
+            
+            // Load rcd again
+            NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["load", "/System/Library/LaunchAgents/com.apple.rcd.plist"])
+            
+            println("Disabled custom event handling")
+        }
+        
+        customEventhandlingEnabled = enabled
     }
 
 }

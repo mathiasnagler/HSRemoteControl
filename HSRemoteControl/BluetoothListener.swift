@@ -32,17 +32,15 @@ class BluetoothListener {
     
     var eventMonitor: AnyObject?
     
-    // MARK: - Initialization
-    
-    init() {
-        startListening()
-    }
-    
     // MARK: - Public
     
     func startListening() {
         // TODO: Find reason for occasional delay
         eventMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.KeyDownMask | NSEventMask.SystemDefinedMask, handler: self.eventHandler)
+    }
+    
+    func stopListening() {
+        // TODO: Implement stopListening
     }
     
     // MARK: - Private
