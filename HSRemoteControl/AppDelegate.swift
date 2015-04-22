@@ -33,11 +33,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Unload rcd
         NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["unload","/System/Library/LaunchAgents/com.apple.rcd.plist"])
+        
+        // Register for notification to track active app
+        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: "workspaceDidActivateApplication:", name: NSWorkspaceDidActivateApplicationNotification, object: nil)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Load rcd again
         NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["load", "/System/Library/LaunchAgents/com.apple.rcd.plist"])
+        
+        // Remove self from notificationcenter
+        NSWorkspace.sharedWorkspace().notificationCenter.removeObserver(self)
     }
     
     // MARK: - Nib Handling
@@ -72,6 +78,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func exitApp() {
         NSApplication.sharedApplication().terminate(self)
+    }
+    
+    // MARK: - Notifications
+    
+    func workspaceDidActivateApplication(notification: NSNotification) {
+        if let
+            userInfo = notification.userInfo,
+            application = userInfo[NSWorkspaceApplicationKey] as? NSRunningApplication,
+            bundleIdentifier = application.bundleIdentifier
+        {
+
+        }
+        
     }
 
 }
