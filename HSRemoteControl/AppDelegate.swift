@@ -42,8 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Load rcd again
-        NSTask.launchedTaskWithLaunchPath("/bin/launchctl", arguments: ["load", "/System/Library/LaunchAgents/com.apple.rcd.plist"])
+        enableCustomEventHandling(false)
         
         // Remove self from notificationcenter
         NSWorkspace.sharedWorkspace().notificationCenter.removeObserver(self)
