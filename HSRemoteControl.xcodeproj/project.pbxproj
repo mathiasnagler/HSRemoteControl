@@ -12,6 +12,7 @@
 		522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522001CE1AD53C8D0002F288 /* MikeyListener.swift */; };
 		522001D01AD53D270002F288 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; };
 		522001D11AD53D270002F288 /* DDHidLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 522001CC1AD53C530002F288 /* DDHidLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		523ECE251AE7F53500102BFA /* MediaApplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ECE241AE7F53500102BFA /* MediaApplications.swift */; };
 		52D2C87E1ADD0D0400B94968 /* HSRemoteControlLaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52D2C87B1ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		52D2C8801ADD0D3000B94968 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D2C87F1ADD0D3000B94968 /* ServiceManagement.framework */; };
 		52D2C8821ADD18CF00B94968 /* BooleanExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C8811ADD18CF00B94968 /* BooleanExtensions.swift */; };
@@ -79,6 +80,7 @@
 		522001CC1AD53C530002F288 /* DDHidLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDHidLib.framework; sourceTree = "<group>"; };
 		522001CE1AD53C8D0002F288 /* MikeyListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MikeyListener.swift; sourceTree = "<group>"; };
 		522001D31AD53E120002F288 /* HSRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
+		523ECE241AE7F53500102BFA /* MediaApplications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaApplications.swift; sourceTree = "<group>"; };
 		52D2C8751ADD0CFA00B94968 /* HSRemoteControlLaunchHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HSRemoteControlLaunchHelper.xcodeproj; path = HSRemoteControlLaunchHelper/HSRemoteControlLaunchHelper.xcodeproj; sourceTree = "<group>"; };
 		52D2C87F1ADD0D3000B94968 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		52D2C8811ADD18CF00B94968 /* BooleanExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooleanExtensions.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				522001CE1AD53C8D0002F288 /* MikeyListener.swift */,
 				4D5E7B121ADABBB400CD984C /* BluetoothListener.swift */,
 				52D2C8811ADD18CF00B94968 /* BooleanExtensions.swift */,
+				523ECE241AE7F53500102BFA /* MediaApplications.swift */,
 				52EB5F571ADB062500586928 /* Windows */,
 				52DC217E1AD5330600C9CC5C /* MainMenu.xib */,
 				52DC217C1AD5330600C9CC5C /* Images.xcassets */,
@@ -364,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D2C8821ADD18CF00B94968 /* BooleanExtensions.swift in Sources */,
+				523ECE251AE7F53500102BFA /* MediaApplications.swift in Sources */,
 				4D5E7B161ADAC9C800CD984C /* MediaKey.m in Sources */,
 				522001CF1AD53C8D0002F288 /* MikeyListener.swift in Sources */,
 				52DC217B1AD5330600C9CC5C /* AppDelegate.swift in Sources */,
