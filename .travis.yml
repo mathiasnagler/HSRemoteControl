@@ -1,3 +1,4 @@
 language: objective-c
 xcode_scheme: HSRemoteControl
 xcode_project: HSRemoteControl.xcodeproj
+osx_image: beta-xcode6.3
